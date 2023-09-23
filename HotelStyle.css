@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+#goHomeButton
+{
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    position: fixed;
+    display: none;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+#goHomeButton i
+{
+    padding: 0.4rem 0.7rem;
+    font-size: 2rem;
+    color: orangered;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#goHomeButton i:hover
+{
+    transform: rotate(360deg);
+    font-size: 3rem;
+}
+nav
+{
+    z-index: 1;
+    height: 4rem;
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    position: sticky;
+    top: 0;
+    transition: 0.7s;
+}
+#hambugger
+{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10;
+    top: 20;
+    cursor: pointer;
+    display: none;
+}
+#cross
+{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10;
+    top: 20;
+    cursor: pointer;
+    display: none;
+}
+nav ul
+{
+    margin: auto;
+    line-height: 4rem;
+}
+nav ul li
+{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding-left: 3rem;
+}
+ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Perpetua;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+}
+ul li a::before
+{
+    transition: 300ms;
+    content: "";
+    height: 0.2rem; 
+    bottom: -2;
+    width: 0%;  
+    position: absolute; 
+    background-color: tomato;
+    position: absolute;
+}
+ul li a:hover::before {
+    width: 100%;
+}
+
+#container
+{
+    height: 100%;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+#Home
+{
+    height: 100vh;
+    width: 100%;
+    background-color: violet;
+}
+#About
+{
+    height: 100vh;
+    width: 100%;
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) 
+{
+    nav ul
+    {
+        display: none;
+    }
+    #hambugger
+    {
+        display: block;
+        margin-right: 5%;
+    }
+    #cross
+    {
+        margin-right: 5%;
+    }
+}
