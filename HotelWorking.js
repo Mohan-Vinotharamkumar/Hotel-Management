@@ -31,3 +31,39 @@ function callImageBackground()
         document.getElementById('imageSlider1').style.display='block';
     })
 }
+
+function callBreakfast()
+{
+    document.getElementById('breakfastBtn').style.backgroundColor='orangered';
+    document.getElementById('lunchBtn').style.backgroundColor='#222222'
+    document.getElementById('dinnerBtn').style.backgroundColor='#222222';
+
+    document.getElementById('MenuSection1').style.display='block';
+    document.getElementById('MenuSection2').style.display='none';
+    document.getElementById('MenuSection3').style.display='none';
+
+}   
+function callLunch()
+{
+    document.getElementById('lunchBtn').style.backgroundColor='orangered';
+
+    document.getElementById('breakfastBtn').style.backgroundColor='#222222';
+    document.getElementById('dinnerBtn').style.backgroundColor='#222222';
+
+    document.getElementById('MenuSection1').style.display='none';
+    document.getElementById('MenuSection2').style.display='block';
+    document.getElementById('MenuSection3').style.display='none';
+
+
+}
+function callDinner()
+{
+    document.getElementById('dinnerBtn').style.backgroundColor='orangered';
+
+    document.getElementById('breakfastBtn').style.backgroundColor='#222222';
+    document.getElementById('lunchBtn').style.backgroundColor='#222222';
+
+    document.getElementById('MenuSection1').style.display='none';
+    document.getElementById('MenuSection2').style.display='none';
+    document.getElementById('MenuSection3').style.display='block';
+}

@@ -357,17 +357,219 @@ ul li a:hover::before {
 {
     color: white;letter-spacing:2px;margin-top:1rem;
 }
+
 #Menu
 {
     height: 100vh;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: white;
+    position: relative;
 }
+#Menu img
+{
+    position: absolute;
+    right: 0;
+    height: 15rem;
+}
+#menuContainer
+{
+    height: 150vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+#menuNameCard
+{
+    height: 50vh;
+    width: 100%;
+    /* background-color: #FFC436; */
+    text-align: center;
+}
+#menuNameHeading
+{
+    height: 80%;
+    width: 65%;
+    /* background-color: violet; */
+    margin: auto;
+    padding-top: 4rem;
+}
+#menuNameHeading h1
+{
+    color: #222222;
+    font-size: 2rem;
+    font-family: garamond;
+    margin-top: 0.5rem;
+}
+#menuNameHeading h2
+{
+    color: orangered;
+    font-size: 1.5rem;
+    font-family: MV Boli;
+}
+#menuNameHeading span button
+{
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    outline: 0;
+    border: none;
+    background-color: #222222;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#AllItems
+{
+    height: 100vh;
+    width: 100%;
+    /* background-color: hotpink; */
+    position: relative;
+}
+#MenuSection1
+{
+    height: 100%;
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+#MenuSection2
+{
+    height: 100%;
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+#MenuSection3
+{
+    height: 100%;
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+#subMenuSection1
+{
+    height: 48%;
+    width: 100%;
+    /* background-color: turquoise; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    /* flex-direction: row; */
+}
+#subMenuSection2
+{
+    position: absolute;
+    height: 48%;
+    width: 100%;
+    /* background-color: violet; */
+    bottom: 0;
+    display: flex;
+}
+#sub1
+{
+    width: 50%;
+}
+#sub2
+{
+    width: 50%;
+}
+#div1
+{
+    height: 80%;
+    width: 95%;
+    /* background-color: #FFC436; */
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 0.2px solid gray; */
+    margin-top: 5%;
+}
+#div1:hover
+{
+    border-left: 5px solid goldenrod;
+    border-right: 5px solid goldenrod;
 
+}
+#div1 img
+{
+    position: absolute;
+    left: 2.5%;
+    top: 20%;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+#div2
+{
+    height: 80%;
+    width: 95%;
+    /* background-color: #222222; */
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* margin-left: 10%; */
+    margin-top: 5%;
+}
+#div2:hover
+{
+    border-left: 5px solid goldenrod;
+    border-right: 5px solid goldenrod;
 
-
-
-
+}
+#div2 img
+{
+    position: absolute;
+    left: 2.5%;
+    top: 20%;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+.divimg
+{
+    width: 35%;
+}
+.divcontent
+{
+    width: 70%;float:right;
+}
+.divcontenth1
+{
+    margin-top:2rem;
+}
+.divcontentp
+{
+    margin-top: 1.5rem;color:grey;padding-right:2rem;
+}
+.divcontentbtn
+{
+    margin-top: 1.5rem;color:whitesmoke;cursor:pointer;height:2rem;width:6rem;outline:0;border:none;background-color:orangered
+}
 
 @media screen and (max-width:600px) 
 {
@@ -409,8 +611,6 @@ ul li a:hover::before {
         left: 2.5rem;
         bottom: 8%;
     } 
-
-
     #aboutSection
     {
         height: 100%;
@@ -496,4 +696,158 @@ ul li a:hover::before {
     {
         font-size: 1.2rem;
     }
+
+
+    #Menu
+    {
+        height: 150vh;
+        width: 100%;
+        /* background-color: blue; */
+        position: relative;
+    }
+    #Menu img
+    {
+        display: none;
+    }
+    #menuContainer
+    {
+        height: 150vh;
+        width: 100%;
+        /* background-color: yellowgreen; */
+    }
+
+    #menuNameCard
+    {
+        height: 45vh;
+        /* background-color: #FFC436; */
+    }
+    #menuNameHeading
+    {
+        width: 90%;
+        /* background-color: violet; */
+        padding-top: 2rem;
+    }
+    #menuNameHeading h1
+    {
+        font-size: 1.5rem;
+    }
+    #menuNameHeading h2
+    {
+        font-size: 1.3rem;
+    }
+    #menuNameHeading span button:nth-child(3)
+    {
+        margin-top: 1rem;
+    }
+    #MenuSection1
+    {
+        height: 100vh;
+        width: 100%;
+        /* background-color: blue; */
+        flex-direction: column;
+    }
+    #MenuSection2
+    {
+        width: 100%;
+        /* background-color: grey; */
+        flex-direction: row;
+    }
+    #MenuSection3
+    {
+        width: 100%;
+        /* background-color: lawngreen; */
+        flex-direction: row;
+    }
+    #subMenuSection1
+    {
+        height: 50%;
+        width: 100%;
+        /* background-color: black; */
+        flex-direction: row;
+    }
+    #subMenuSection2
+    {
+        height: 50%;
+        width: 100%;
+        /* background-color: violet; */
+        flex-direction: row;
+    }
+    #sub1
+    {
+        height: 100%;
+        width: 100%;
+        /* background-color: teal; */
+    }
+    #sub2
+    {
+        height: 100%;
+        width: 100%;
+        /* background-color: #FFC436; */
+    }
+    #div1
+    {
+        height: 85%;
+        width: 95%;
+        /* background-color: hotpink; */
+        margin-top: 5%;
+    }
+    #div1 img
+    {
+        position: absolute;
+        left: 2.5%;
+        top: 20%;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+    }
+    #div2
+    {
+        height: 85%;
+        width: 95%;
+        /* background-color: #222222; */
+        margin-top: 5%;
+    }
+
+#div2 img
+{
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    /* display: none; */
+}
+.divimg
+{
+    width: 100%;
+    height: 0%;
+    /* background-color: yellowgreen; */
+}
+.divcontent
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: #171717; */
+}
+.divcontenth1
+{
+    margin-top: 3rem;
+    padding-left: .5rem;
+    padding-right: 1rem;
+}
+.divcontenth1 span
+{
+    display: none;
+}
+.divcontentp
+{
+    margin-top: 1rem;color:grey;padding-right:1rem;
+    padding-left: 0.5rem;
+    text-align: justify;
+}
+.divcontentbtn
+{
+    margin-top: 1rem;color:whitesmoke;cursor:pointer;height:2rem;width:6rem;outline:0;border:none;background-color:orangered;margin-left: 0.5rem;
+}
 }
