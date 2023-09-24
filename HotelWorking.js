@@ -16,3 +16,18 @@ function removeNav()
     document.getElementById('hambugger').style.display='block';
     document.getElementById('ul').style.display='none'
 }
+
+function callImageBackground()
+{
+    document.getElementById('btnRight').addEventListener('click',()=>
+    {
+        const image1 = document.getElementById('imageSlider1');
+        document.getElementById('imageSlider1').style.display='none';
+        document.getElementById('imageSlider2').style.display='block';
+    })
+    document.getElementById('btnLeft').addEventListener('click',()=>
+    {
+        document.getElementById('imageSlider2').style.display='none';
+        document.getElementById('imageSlider1').style.display='block';
+    })
+}

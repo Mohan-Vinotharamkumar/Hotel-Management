@@ -7,6 +7,10 @@ html
 {
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+    height: 0;
+
+}
 #goHomeButton
 {
     position: absolute;
@@ -30,6 +34,14 @@ html
 {
     transform: rotate(360deg);
     font-size: 3rem;
+}
+#nav h1
+{
+    color: #FFC436;
+    line-height: 4rem;
+    font-family: Perpetua;
+    padding-left: 2rem;
+    letter-spacing: 0.2rem;
 }
 nav
 {
@@ -103,29 +115,254 @@ ul li a:hover::before {
 {
     height: 100%;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: black;
+    /* background-image: url(https://wallpapercave.com/dwp1x/wp7019509.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #Home
 {
     height: 100vh;
     width: 100%;
-    background-color: violet;
+    /* background-color: violet; */
+    position: relative;
 }
+#imageSlider1
+{
+    animation: comeRight 0.5s ease-in;
+}
+#imageSlider2
+{
+    animation: comeLeft 0.5s ease-in;
+}
+@keyframes comeRight
+{
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+@keyframes comeLeft
+{
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+#HomeImageContent
+{
+    height: 80%;
+    width: 80%;
+    /* background-color: yellowgreen; */
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+#HomeImageContent h2
+{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: Garamond;   
+    letter-spacing: 0.5rem; 
+    animation: fade-left 0.5s ease-in;
+    margin-top: 15%;
+}
+@keyframes fade-left 
+{
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
+#HomeImageContent h1
+{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-family: Garamond;   
+    margin-top: 2rem;
+}
+#HomeImageContent button
+{
+    margin-top: 5rem;
+    height: 3rem;
+    width: 10rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: orangered;
+    outline: 0;
+    border: none;
+    color: whitesmoke;
+    font-family: garamond;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+#HomeImageContent button:hover
+{
+    transition: 0.5s ease-in-out;
+    background-color: antiquewhite;
+    color: orangered;
+}
+#btnRight,#btnLeft
+{
+    position: absolute;
+    bottom: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    background: transparent;
+    outline: 0;
+    border: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border: 2px solid gray;
+}
+#btnRight
+{
+    right: 2.5rem;
+}
+#btnLeft
+{
+    left: 2.5rem;
+} 
+#btnRight:hover,#btnLeft:hover
+{
+    transition: 0.5s;
+    color: #90A17D;
+}
+
 #About
 {
     height: 100vh;
     width: 100%;
+    background-color: white;
+    position: relative;
+}
+#aboutSection
+{
+    position: absolute;
+    height: 80%;
+    width: 85%;
+    /* background-color: black; */
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+#about1
+{
+    height: 100%;
+    width: 65%;
+    /* background-color: goldenrod; */
+    position: relative;
+}
+#about1 section
+{
+    height: 70%;
+    width: 85%;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 2rem;
+}
+#about1 section h2
+{
+    color: orangered;
+    font-family: MV Boli;
+    font-size: 1.3rem;
+}
+#about1 section h1
+{
+    font-size: 2rem;
+    font-family: Verdana;
+    margin-top: 1%;
+}
+#about1 section p
+{
+    padding-right: 7rem;
+    padding-top: 2rem;
+    color: grey;
+}
+#about2
+{
+    height: 100%;
+    width: 35%;
     background-color: violet;
+    background-image: url(https://wallpapercave.com/dwp1x/wp9326407.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#about3
+{
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    background-color: tomato;
+    right: 20%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 
-
-
-
-
-
-
-
+#Addvertisement
+{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+#Addvertisement div
+{
+    height: 55%;
+    width: 70%;
+    margin: auto;
+    /* background-color: powderblue; */
+    position: absolute;
+    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#Addvertisement div h1
+{
+    color: whitesmoke;font-size:2.5rem;font-family:garamond;margin-top:0.7rem;
+}
+#Addvertisement div h2
+{
+    color: orangered;font-family: MV Boli;
+}
+#Addvertisement div h3
+{
+    color: white;letter-spacing:2px;margin-top:1rem;
+}
+#Menu
+{
+    height: 100vh;
+    width: 100%;
+    background-color: yellowgreen;
+}
 
 
 
@@ -146,5 +383,117 @@ ul li a:hover::before {
     #cross
     {
         margin-right: 5%;
+    }
+    #HomeImageContent h2
+    {
+        font-size: 1.5rem;
+        margin-top: 45%;
+    }
+    #HomeImageContent h1
+    {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+    #HomeImageContent button
+    {
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
+    #btnRight
+    {
+        right: 2.5rem;
+        bottom: 8%;
+    }
+    #btnLeft
+    {
+        left: 2.5rem;
+        bottom: 8%;
+    } 
+
+
+    #aboutSection
+    {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+    #about1
+    {
+        height: 60%;
+        width: 100%;
+        /* background-color: goldenrod; */
+        position: relative;
+    }
+    #about1 section
+    {
+        height: 100%;
+        width: 95%;
+        /* background-color: yellowgreen; */
+        position: absolute;
+        padding-left: 1rem;
+    }
+    #about1 section h2
+    {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    #about1 section h1
+    {
+        font-size: 1.5rem;
+    }
+    #about1 section p
+    {
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        letter-spacing: 1px;
+    }
+    #about2
+    {
+        height: 40%;
+        width: 100%;
+        background-image: url(https://wallpapercave.com/dwp1x/wp9326407.jpg);
+    }
+    #about3
+    {
+        height: 30%;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 10rem;
+        bottom: 0;
+        /* display: none; */
+    }
+
+    #Addvertisement
+    {
+        height: 40vh;
+        width: 100%;
+        position: relative;
+    }
+    #Addvertisement div
+    {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    #Addvertisement div h1
+    {
+        font-size: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    #Addvertisement div h1 i
+    {
+        display: none;
+    }
+    #Addvertisement div h2
+    {
+        margin-top: 1.5rem;
+    }
+    #Addvertisement div h3
+    {
+        font-size: 1.2rem;
     }
 }

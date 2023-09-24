@@ -9,9 +9,10 @@
 </head>
 <body>
     <nav id="nav">
+        <h1>SUN RESTAURANT</h1>
         <ul id="ul">
-            <li id="liNav"><a href="#Home">Home</a></li>
-            <li id="liNav"><a href="#About">About</a></li>
+            <li id="liNav"><a href="#">Home</a></li>
+            <li id="liNav"><a href="#">About</a></li>
             <li id="liNav"><a href="#">Menu</a></li>
             <li id="liNav"><a href="#">Our Service</a></li>
             <li id="liNav"><a href="#">Contact</a></li>
@@ -21,24 +22,69 @@
         <li id="cross" onclick="removeNav()" ><i class="fa-solid fa-x"></i></li>
     </nav>
 
-    <button id="goHomeButton" onclick="window.scrollTo(0,0)"><i class="fa-solid fa-angle-up"></i></button>
+    <button id="goHomeButton" style="z-index: 5;" onclick="window.scrollTo(0,0)"><i class="fa-solid fa-angle-up"></i></button>
 
     <div id="container">
+        <!-- Home section Goes heree........ -->
         <section id="Home">
+            <div id="imageSlider1">
+                <img height="100%" width="100%" style="filter:brightness(20%);" src="https://wallpapercave.com/dwp1x/wp1874166.jpg" alt="">
+                <div id="HomeImageContent">
+                    <h2 >Welcome to Our <span style="color: orangered;">Restaurant</span></h2>
+                    <h1 >Best place for family & friends <br> with <span style="color: #5D9C59;">green</span> and healthy foods.</h1>
+                    <button>Book a Table</button>
+                </div>
+            </div>
 
+            <div id="imageSlider2" style="display: none;">
+                <img height="100%" style="display: block;filter:brightness(25%)" width="100%" src="https://wallpapercave.com/dwp1x/wp1874170.jpg" alt="">
+                <div id="HomeImageContent">
+                    <h2 >Welcome to Our <span style="color: orangered;">Restaurant</span></h2>
+                    <h1 >Best place for fun & entertainment <br> with <span style="color: #5D9C59;">full of pleasure</span> and happy moments.</h1>
+                    <button>Book a Table</button>
+                </div>
+            </div>
+
+            <button id="btnRight" onclick="callImageBackground()"><i class="fa-solid fa-chevron-right"></i></button>
+            <button id="btnLeft" onclick="callImageBackground()"><i class="fa-solid fa-chevron-left"></i></button>
         </section>
 
-        <section id="Home">
 
+        <section id="About">
+            <div id="aboutSection">
+                <div id="about1">
+                    <section>
+                        <h2>Famous for Good and Enriched-food</h2>
+                        <h1>About Us</h1>
+                        <p>
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie dignissim qui blandit praesent luptatum 
+                            zzril delenit augue dui dolore eugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option and congue nihil 
+                            imperdiet doming mazim.
+                        </p>
+                        <p>
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie dignissim qui blandit praesent luptatum 
+                            zzril delenit augue dui dolore eugait nulla facilisi.
+                        </p>
+                    </section>
+                </div>
+                <div id="about2">
+
+                </div>
+                <div id="about3">
+                    <img src="./Images/salad.jpg" height="100%" width="100%" alt="">
+                </div>
+            </div>
         </section>
 
-        <section id="Home">
-
+        <section id="Addvertisement">
+            <img style="filter: brightness(25%);" src="https://wallpapercave.com/dwp1x/wp3628276.jpg" height="100%" width="100%" alt="">
+            <div>
+                <h2>Delicious food at door step </h2>
+                <h1><i style="color: goldenrod;" class="fa-solid fa-crown"></i> We are the Best Restaurant at the Market <i style="color: goldenrod;" class="fa-solid fa-crown"></i></h1>
+                <h3>+91-8870164172 / +91-9838614732</h3>
+            </div>
         </section>
-        <section id="Home">
-
-        </section>
-        <section id="About" style="background-color: aqua;">
+        <section id="Menu">
 
         </section>
     </div>
@@ -53,9 +99,8 @@
             }
             else if(scrollStarts>2)
             {
-                document.getElementById('nav').style.cssText='background-color:black;position:fixed;'
+                document.getElementById('nav').style.cssText='background-color:#171717;position:fixed;'
                 document.getElementById('goHomeButton').style.display='block'
-
             }
         })
     </script>
