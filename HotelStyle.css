@@ -9,7 +9,7 @@ html
 }
 body::-webkit-scrollbar {
     height: 0;
-
+    width: 0;
 }
 #goHomeButton
 {
@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 nav
 {
-    z-index: 1;
+    z-index: 10;
     height: 4rem;
     width: 100%;
     background-color: #171717;
@@ -290,7 +290,7 @@ ul li a:hover::before {
 #about1 section h2
 {
     color: orangered;
-    font-family: MV Boli;
+    font-family: Comic Sans MS;
     font-size: 1.3rem;
 }
 #about1 section h1
@@ -332,7 +332,7 @@ ul li a:hover::before {
     width: 100%;
     position: relative;
 }
-#Addvertisement div
+#addDiv
 {
     height: 55%;
     width: 70%;
@@ -345,25 +345,46 @@ ul li a:hover::before {
     right: 0;
     text-align: center;
 }
-#Addvertisement div h1
+#addH1
 {
-    color: whitesmoke;font-size:2.5rem;font-family:garamond;margin-top:0.7rem;
+    color: whitesmoke;font-size:2rem;font-family:Comic Sans MS;margin-top:0.7rem;
 }
-#Addvertisement div h2
+#addH2
 {
-    color: orangered;font-family: MV Boli;
+    color: orangered;font-family: Comic Sans MS;
 }
-#Addvertisement div h3
+#addH3
 {
     color: white;letter-spacing:2px;margin-top:1rem;
 }
-
+#addBtn
+{
+    height: 3rem;
+    width: 10rem;
+    margin-top: 2.5rem;
+    outline: 0;
+    border: none;
+    background-color: orangered;
+    color: whitesmoke;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 0.7rem;
+}
+#addBtn:hover
+{
+    background-color: whitesmoke;
+    color: orangered;
+}
 #Menu
 {
-    height: 100vh;
+    height: 160vh;
     width: 100%;
     background-color: white;
     position: relative;
+    /* background-color: yellowgreen; */
+    /* background: transparent; */
 }
 #Menu img
 {
@@ -403,7 +424,7 @@ ul li a:hover::before {
 {
     color: orangered;
     font-size: 1.5rem;
-    font-family: MV Boli;
+    font-family: Comic Sans MS;
 }
 #menuNameHeading span button
 {
@@ -570,6 +591,376 @@ ul li a:hover::before {
 {
     margin-top: 1.5rem;color:whitesmoke;cursor:pointer;height:2rem;width:6rem;outline:0;border:none;background-color:orangered
 }
+#OfferAdvertisement
+{
+    height: 40vh;
+    width: 100%;
+    background-color:#171717 ;
+}
+
+#chefSection
+{
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+#chefHeader
+{
+    height: 30%;
+    width: 100%;
+    /* background-color:#FFC436; */
+    text-align: center;
+    position: relative;
+}
+#chefHeader h2
+{
+    font-size: 1.5rem;
+    color: goldenrod;
+    font-family: Comic Sans MS;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+}
+#chefHeader h1
+{
+    font-size: 2.5rem;
+    color: #222222;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+#chefImageDiv
+{
+    height: 70%;
+    width: 100%;
+    /* background-color: violet; */
+    position: relative;    
+}
+#ImageDiv
+{
+    height: 75%;
+    width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+#sec1
+{
+    height: 90%;
+    width: 23%;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease;
+}
+#sec1:hover
+{
+    /* background-image: url(https://wallpapercave.com/dwp1x/wp11979582.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-color: #171717;
+}
+#sec1:hover #ImageSection img
+{
+    border: 5px solid orange
+}
+#sec1:hover #name
+{
+    color: white;
+}
+#sec1:hover #nameAbt
+{
+    color: white;
+}
+#sec1:hover #city
+{
+    color: orange;
+}
+#ImageSection
+{
+    height: 45%;
+    width: 100%;
+    /* background-color: #FFC436; */
+    display: flex;
+    border-radius: 0.5rem;
+}
+#ImageSection img
+{
+    height: 70%;
+    width: 40%;
+    border-radius: 50%;
+    border: 5px solid gray;
+    margin: auto;
+    transition: 0.2s ease;
+}
+#ContentSection
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#name
+{
+    padding-top: 5%;
+    font-family: Oldtown;
+    color: black;
+    transition: 0.5s;
+}
+#city
+{
+    padding-top: 3%;
+    font-family: Corbel;
+    color: gray;
+    transition: 0.3s;
+}
+#nameAbt
+{
+    padding-top: 10%;
+    font-family: Corbel;
+    color: gray;
+}
+
+#bookingTable
+{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#bookingWallImage
+{
+    position: absolute;
+    height: 45%;
+    width: 25%;
+    right: -3%;
+    top: 6%;
+    transform: rotate(270deg);
+}
+#imageHolder
+{
+    height: 100%;
+    width: 45%;
+    /* background-color: #222222; */
+    display: flex;
+}
+#imgFull
+{
+    height: 75%;
+    width: 100%;
+    margin: auto;
+}
+#formHolder
+{
+    height: 100%;
+    width: 55%;
+    /* background-color: violet; */
+    display: flex;
+    z-index: 2;
+}
+#formDiv
+{
+    height: 75%;
+    width: 90%;
+    margin: auto;
+}
+#formContent h2
+{
+    font-family: Comic Sans MS;
+    color: orangered;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+#formContent p
+{
+    font-family: garamond;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2%;
+}
+#textDiv
+{
+    height: 75%;
+    /* background-color: #171717; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#formSpan1
+{
+    height: 60%;
+    width: 50%;
+    /* background-color:wheat; */
+    padding-top: 5%;
+}
+#formSpan1 label
+{
+    margin-bottom: 5%;
+}
+input
+{
+    height: 25%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    outline: 0;
+    border: 1px solid grey;
+    background: transparent;
+    margin-top: 3%;
+    color: gray;
+    font-size: 0.8rem;
+}
+input::placeholder
+{
+    color: gray;
+}
+#formSpan2
+{
+    height: 60%;
+    width: 50%;
+    /* background-color:palegreen; */
+    padding-top: 5%;
+}
+#textDiv button
+{
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    height: 3rem;
+    width: 10rem;
+    background-color: orangered;
+    outline: 0;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#textDiv button:hover
+{
+    background-color:#222222
+}
+#subContentText
+{
+    position: absolute;
+    bottom: 17%;
+    right: 10%;
+    font-size: 0.9rem;  
+    letter-spacing: 1.5px;
+    color: gray;
+}
+#subContentText p:nth-child(1)
+{
+    font-family: Comic Sans MS;
+    color: orangered;
+}
+#commentSection
+{
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    position: relative;
+}
+#commentHeading
+{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    /* background-color: wheat; */
+    position: absolute;
+}
+#commentHeading h2
+{
+    color: orangered;
+    font-family: Comic Sans MS;
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+#commentHeading p
+{   
+   font-size: 2rem; 
+   font-weight: 900;
+   letter-spacing: 2px;
+   color: black;
+   margin-top: 1%;
+}
+#commentSubSection
+{
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    /* background-color: aqua; */
+    position: absolute;
+    display: flex;
+}
+#commentImageSection
+{
+    height: 80%;
+    width: 40%;
+    /* background-color: violet; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#commentContentSection
+{
+    height: 80%;
+    width: 45%;
+    /* background-color:chartreuse; */
+    margin: auto;
+    display: flex;
+}
+#imgCard
+{
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    /* padding: 1rem 1rem; */
+    margin: 0.5rem 1rem;
+    border: 4px solid gray;
+}
+#customer1,#customer2,#customer3,#customer4,#customer5
+{
+    height: 80%;
+    width: 90%;
+    /* background-color: thistle; */
+    margin: auto;
+}
+#custPara
+{
+    font-size: 1rem;
+    color: gray;
+    font-family: Corbel;
+    text-align: justify;
+}
+#custName
+{
+    color: black;
+    margin-top: 5%;
+    font-family: corbel;
+    transition: 0.5s ;
+}
+#custCity
+{
+    color: gray;
+    margin-top: 1%;
+    font-family: corbel;
+    font-size: 1rem;
+}
+/* ///////////////------------------- Media Query starts from here ------------------ ////////////////////// */
 
 @media screen and (max-width:600px) 
 {
@@ -672,15 +1063,15 @@ ul li a:hover::before {
         width: 100%;
         position: relative;
     }
-    #Addvertisement div
+    #addDiv
     {
         height: 100%;
         width: 100%;
         text-align: center;
     }
-    #Addvertisement div h1
+    #addH1
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -688,15 +1079,18 @@ ul li a:hover::before {
     {
         display: none;
     }
-    #Addvertisement div h2
+    #addH2
     {
         margin-top: 1.5rem;
     }
-    #Addvertisement div h3
+    #addH3
     {
         font-size: 1.2rem;
     }
-
+    #addBtn
+    {
+        margin-top: 1.5rem;
+    }
 
     #Menu
     {
@@ -777,6 +1171,7 @@ ul li a:hover::before {
         height: 100%;
         width: 100%;
         /* background-color: teal; */
+        position: relative;
     }
     #sub2
     {
@@ -790,15 +1185,9 @@ ul li a:hover::before {
         width: 95%;
         /* background-color: hotpink; */
         margin-top: 5%;
-    }
-    #div1 img
-    {
-        position: absolute;
-        left: 2.5%;
-        top: 20%;
-        height: 8rem;
-        width: 8rem;
-        border-radius: 50%;
+        background-image: url(https://wallpapercave.com/dwp1x/wp10686280.jpg);
+        background-position: center;
+        background-size: cover;
     }
     #div2
     {
@@ -806,48 +1195,188 @@ ul li a:hover::before {
         width: 95%;
         /* background-color: #222222; */
         margin-top: 5%;
+        background-image: url(https://wallpapercave.com/dwp1x/wp10686280.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .divimg
+    {
+        width: 100%;
+        height: 0%;
+        /* background-color: yellowgreen; */
+    }
+    .divcontent
+    {
+        width: 100%;
+        height: 100%;
+        /* background-color: #171717; */
+    }
+    .divcontenth1
+    {
+        margin-top: 3rem;
+        padding-left: .5rem;
+        padding-right: 1rem;
+        color: goldenrod;
+        opacity: 0.8;
+    }
+    .divcontenth1 span
+    {
+        display: none;
+    }
+    .divcontentp
+    {
+        margin-top: 1rem;color:grey;padding-right:1rem;
+        padding-left: 0.5rem;
+        text-align: justify;
+    }
+    .divcontentbtn
+    {
+        margin-top: 1rem;color:whitesmoke;cursor:pointer;height:2rem;width:6rem;outline:0;border:none;background-color:orangered;margin-left: 0.5rem;
     }
 
-#div2 img
-{
-    position: absolute;
-    left: 0%;
-    top: 20%;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    /* display: none; */
-}
-.divimg
-{
-    width: 100%;
-    height: 0%;
-    /* background-color: yellowgreen; */
-}
-.divcontent
-{
-    width: 100%;
-    height: 100%;
-    /* background-color: #171717; */
-}
-.divcontenth1
-{
-    margin-top: 3rem;
-    padding-left: .5rem;
-    padding-right: 1rem;
-}
-.divcontenth1 span
-{
-    display: none;
-}
-.divcontentp
-{
-    margin-top: 1rem;color:grey;padding-right:1rem;
-    padding-left: 0.5rem;
-    text-align: justify;
-}
-.divcontentbtn
-{
-    margin-top: 1rem;color:whitesmoke;cursor:pointer;height:2rem;width:6rem;outline:0;border:none;background-color:orangered;margin-left: 0.5rem;
-}
+
+    #chefSection
+    {
+        height: 200vh;
+        /* background-color: yellowgreen; */
+    }
+    #chefHeader
+    {
+        height: 10%;
+        /* background-color:#FFC436; */
+    }
+    #chefHeader h2
+    {
+        font-size: 1.2rem;
+        top: 20%;
+    }
+    #chefHeader h1
+    {
+        font-size: 2rem;
+        top: 45%
+    } 
+    #chefImageDiv
+    {
+        height: 90%;
+        /* background-color: violet; */
+    }
+    #ImageDiv
+    {
+        height: 100%;
+        width: 100%;
+        /* background-color: aqua; */
+        flex-direction: column;
+    }
+    #sec1
+    {
+        height: 24%;
+        width: 90%;
+        background-color: white;
+    }
+    #ImageSection img
+    {
+        width: 30%;
+    }
+    #ContentSection
+    {
+        height: 55%;
+        /* background-color: brown; */
+    }
+    #name
+    {
+        font-size: 1.3rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #city
+    {
+        padding-top: 3%;
+        font-size: 1.1rem;
+    }
+    #nameAbt
+    {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #bookingTable
+    {
+        height: 100vh;
+        /* background-color: lightsalmon; */
+        display: flex;
+    }
+    #bookingWallImage
+    {
+        display: none;
+    }
+    #imageHolder
+    {
+        display: none;
+    }
+    #formHolder
+    {
+        width: 90%;
+        /* background-color: violet; */
+        display: flex;
+        margin: auto;
+        z-index: 0;
+    }
+    #formDiv
+    {
+        height: 100%;
+        width: 100%;
+        /* background-color: #FFC436; */
+    }
+    #formContent h2
+    {
+        text-align: center;
+    }
+    #formContent p
+    {
+        font-size: 1.7rem;
+        margin-top: 2%;
+        text-align: center;
+    }
+    #textDiv
+    {
+        height: 100%;
+        /* background-color: #171717; */
+        width: 100%;
+        flex-direction: column;
+    }
+    #formSpan1
+    {
+        height: 35%;
+        width: 100%;
+        /* background-color:wheat; */
+        padding-top: 5%;
+    }
+    input
+    {
+        height: 25%;
+        width: 100%;
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+    #formSpan2
+    {
+        height: 35%;
+        width: 100%;
+        /* background-color:palegreen; */
+        padding-top: 5%;
+    }
+    #textDiv button
+    {
+        bottom: 17.5%;
+    }
+    #subContentText
+    {
+        bottom: 13%;
+        left: 1%;
+    }
+    #subContentText p:nth-child(2)
+    {
+        font-family: Comic Sans MS;
+        display: none;
+    }
 }
