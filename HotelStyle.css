@@ -865,6 +865,7 @@ input::placeholder
     font-family: Comic Sans MS;
     color: orangered;
 }
+
 #commentSection
 {
     height: 100vh;
@@ -930,7 +931,13 @@ input::placeholder
     width: 8rem;
     /* padding: 1rem 1rem; */
     margin: 0.5rem 1rem;
-    border: 4px solid gray;
+    border: 4px solid grey;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#imgCard:hover
+{
+    border: 4px solid orange;
 }
 #customer1,#customer2,#customer3,#customer4,#customer5
 {
@@ -959,6 +966,113 @@ input::placeholder
     margin-top: 1%;
     font-family: corbel;
     font-size: 1rem;
+}
+#footerSection
+{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+}
+#footerBackground
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* transform: rotate(180deg); */
+    margin: auto;
+    filter: brightness(15%);
+}
+#footerContent
+{
+    height: 80%;
+    width: 80%;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+#footSec1,#footSec2,#footSec3
+{
+    height: 80%;
+    width: 24%;
+    /* background-color: violet; */
+    margin: auto;
+    color: lavender;
+    font-family: corbel;
+
+}
+#footSec1
+{
+    display: flex;
+}
+#footSec2
+{
+    width: 30%;
+}
+#footSec1 img
+{
+    height: 80%;
+    width: 80%;
+    /* margin: auto; */
+}
+.foodAdress
+{
+    padding-left: 5%;
+    font-family: corbel;
+    margin-top: 5%;
+}
+.footMail
+{
+    padding-top: 15%;
+    padding-left: 5%;
+    font-family: corbel;
+}
+.footContact
+{
+    font-family: corbel;
+    padding-left: 5%;
+    padding-top: 2.5%;
+}
+#footIconSection
+{
+    padding-left: 5%;
+}
+#footIconSection i
+{
+    font-size: 1rem;
+    margin-top: 15%;
+    margin-left: 2%;
+    color: #222222;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.6rem;
+}
+#footSec3 h1
+{
+    padding-left: 15%;
+    padding-top: 5%;
+    font-size: 1.5rem;
+}
+#footerul
+{
+    padding-top: 10%;
+    padding-left: 15%;
+}
+#footerLi
+{
+    list-style: none;
+    padding-top: 4%;
+    cursor: pointer;
+}
+#footerLi:hover
+{
+    color: orange;
 }
 /* ///////////////------------------- Media Query starts from here ------------------ ////////////////////// */
 
@@ -1379,4 +1493,85 @@ input::placeholder
         font-family: Comic Sans MS;
         display: none;
     }
+    #commentSection
+    {
+        height: 100vh;
+        background-color: yellowgreen;
+        margin-top: 5%;
+    }
+    #commentHeading
+    {
+        height: 12%;
+        /* background-color: wheat; */
+    }
+    #commentHeading p
+    {   
+    font-size: 1.5rem; 
+    margin-top: 2%;
+    }
+    #commentSubSection
+    {
+        height: 88%;
+        /* background-color: aqua; */
+        flex-direction: column;
+    }
+    #commentImageSection
+    {
+        height: 40%;
+        width: 95%;
+        /* background-color: violet; */
+        padding-top: 10%;
+    }
+    #commentContentSection
+    {
+        height: 60%;
+        width: 95%;
+        /* background-color:chartreuse; */
+        margin: auto;
+        display: flex;
+    }
+    #imgCard
+    {
+        height: 4rem;
+        width: 4rem;
+        margin: 0.5rem 0.9rem;
+        border: 4px solid grey;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+#imgCard:nth-child(1){height: 6rem;width: 6rem;}
+#imgCard:nth-child(2){height: 6rem;width: 6rem;}
+
+#imgCard:hover
+{
+    border: 4px solid orange;
+}
+#customer1,#customer2,#customer3,#customer4,#customer5
+{
+    height: 80%;
+    width: 90%;
+    /* background-color: thistle; */
+    margin: auto;
+}
+#custPara
+{
+    font-size: 1rem;
+    color: gray;
+    font-family: Corbel;
+    text-align: justify;
+}
+#custName
+{
+    color: black;
+    margin-top: 5%;
+    font-family: corbel;
+    transition: 0.5s ;
+}
+#custCity
+{
+    color: gray;
+    margin-top: 1%;
+    font-family: corbel;
+    font-size: 1rem;
+}
 }

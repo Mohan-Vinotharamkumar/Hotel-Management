@@ -70,7 +70,7 @@ function callDinner()
 
 function callComment1()
 {
-    document.getElementById('customer1').style.display='block';
+    setTimeout(()=>{document.getElementById('customer1').style.display='block';},100)
     document.getElementById('customer2').style.display='none';
     document.getElementById('customer3').style.display='none';
     document.getElementById('customer4').style.display='none';
@@ -80,7 +80,7 @@ function callComment1()
 function callComment2()
 {
     document.getElementById('customer1').style.display='none';
-    document.getElementById('customer2').style.display='block';
+    setTimeout(()=>{document.getElementById('customer2').style.cssText='display:block'},100)
     document.getElementById('customer3').style.display='none';
     document.getElementById('customer4').style.display='none';
     document.getElementById('customer5').style.display='none';
@@ -89,7 +89,7 @@ function callComment3()
 {
     document.getElementById('customer1').style.display='none';
     document.getElementById('customer2').style.display='none';
-    document.getElementById('customer3').style.display='block';
+    setTimeout(()=>{document.getElementById('customer3').style.display='block';},100)
     document.getElementById('customer4').style.display='none';
     document.getElementById('customer5').style.display='none';
 }
@@ -98,7 +98,7 @@ function callComment4()
     document.getElementById('customer1').style.display='none';
     document.getElementById('customer2').style.display='none';
     document.getElementById('customer3').style.display='none';
-    document.getElementById('customer4').style.display='block';
+    setTimeout(()=>{document.getElementById('customer4').style.display='block';},100)
     document.getElementById('customer5').style.display='none';
 }
 function callComment5()
@@ -107,5 +107,5 @@ function callComment5()
     document.getElementById('customer2').style.display='none';
     document.getElementById('customer3').style.display='none';
     document.getElementById('customer4').style.display='none';
-    document.getElementById('customer5').style.display='block';
+    setTimeout(()=>{document.getElementById('customer5').style.display='block';},100)
 }
