@@ -24,16 +24,20 @@ body::-webkit-scrollbar {
 }
 #goHomeButton i
 {
-    padding: 0.4rem 0.7rem;
+    padding: 0.2rem 0.2rem;
     font-size: 2rem;
     color: orangered;
     transition: 0.5s;
     cursor: pointer;
+    border: 2px solid gray;
+    border-radius: 0.2rem;
 }
 #goHomeButton i:hover
 {
     transform: rotate(360deg);
-    font-size: 3rem;
+    background-color: orangered;
+    color: whitesmoke;
+    border-color: orangered;
 }
 #nav h1
 {
@@ -46,7 +50,7 @@ body::-webkit-scrollbar {
 nav
 {
     z-index: 10;
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     background-color: #171717;
     display: flex;
@@ -74,10 +78,18 @@ nav
     cursor: pointer;
     display: none;
 }
+#navLogo
+{
+    height: 8rem;
+    width: 10rem;
+    /* border: 5px solid orange; */
+    position: absolute;
+    top: -30%;
+}
 nav ul
 {
     margin: auto;
-    line-height: 4rem;
+    line-height: 5rem;
 }
 nav ul li
 {
@@ -967,6 +979,7 @@ input::placeholder
     font-family: corbel;
     font-size: 1rem;
 }
+
 #footerSection
 {
     height: 70vh;
@@ -1052,6 +1065,13 @@ input::placeholder
     background-color: white;
     border-radius: 50%;
     padding: 0.6rem;
+    transition: 0.5s ease-in;  
+    cursor: pointer; 
+}
+#footIconSection i:hover
+{
+    background-color: black;
+    color: whitesmoke;
 }
 #footSec3 h1
 {
@@ -1496,7 +1516,7 @@ input::placeholder
     #commentSection
     {
         height: 100vh;
-        background-color: yellowgreen;
+        /* background-color: yellowgreen; */
         margin-top: 5%;
     }
     #commentHeading
@@ -1539,39 +1559,107 @@ input::placeholder
         transition: 0.5s;
         cursor: pointer;
     }
-#imgCard:nth-child(1){height: 6rem;width: 6rem;}
-#imgCard:nth-child(2){height: 6rem;width: 6rem;}
+    #imgCard:nth-child(1){height: 6rem;width: 6rem;}
+    #imgCard:nth-child(2){height: 6rem;width: 6rem;}
 
-#imgCard:hover
-{
-    border: 4px solid orange;
-}
-#customer1,#customer2,#customer3,#customer4,#customer5
-{
-    height: 80%;
-    width: 90%;
-    /* background-color: thistle; */
-    margin: auto;
-}
-#custPara
-{
-    font-size: 1rem;
-    color: gray;
-    font-family: Corbel;
-    text-align: justify;
-}
-#custName
-{
-    color: black;
-    margin-top: 5%;
-    font-family: corbel;
-    transition: 0.5s ;
-}
-#custCity
-{
-    color: gray;
-    margin-top: 1%;
-    font-family: corbel;
-    font-size: 1rem;
-}
+    #imgCard:hover
+    {
+        border: 4px solid orange;
+    }
+    #customer1,#customer2,#customer3,#customer4,#customer5
+    {
+        height: 80%;
+        width: 90%;
+        /* background-color: thistle; */
+        margin: auto;
+    }
+    #custPara
+    {
+        font-size: 1rem;
+        color: gray;
+        font-family: Corbel;
+        text-align: justify;
+    }
+    #custName
+    {
+        color: black;
+        margin-top: 5%;
+        font-family: corbel;
+        transition: 0.5s ;
+    }
+    #custCity
+    {
+        color: gray;
+        margin-top: 1%;
+        font-family: corbel;
+        font-size: 1rem;
+    }
+
+    #footerSection
+    {
+        height: 50vh;
+    }
+    #footerBackground
+    {
+        filter: brightness(10%);
+    }
+    #footerContent
+    {
+        height: 80%;
+        width: 100%;
+        /* background-color: yellowgreen; */
+    }
+    #footSec1,#footSec2,#footSec3
+    {
+        width: 25%;
+        /* background-color: violet; */
+    }
+    #footSec1
+    {
+        display: flex;
+    }
+    #footSec2
+    {
+        width: 40%;
+    }
+    #footSec1 img
+    {
+        height: 50%;
+        width: 70%;
+    }
+    .foodAdress
+    {
+        padding-left: 0%;
+        margin-top: 15%;
+    }
+    .footMail
+    {
+        display: none;
+    }
+    .footContact
+    {
+        padding-left: 0%;
+        padding-top: 10%;
+    }
+    #footIconSection
+    {
+        padding-left: 0%;
+    }
+    #footIconSection i
+    {
+        font-size: 0.6rem;
+        margin-top: 15%;
+        margin-left: 0%;
+        padding: 0.4rem;
+    }
+    #footSec3 h1
+    {
+        padding-top: 20%;
+        font-size: 1rem;
+    }
+    #footerLi
+    {
+        padding-top: 4%;
+        font-size: 0.7rem;
+    }
 }
