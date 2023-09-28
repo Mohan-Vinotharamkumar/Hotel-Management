@@ -128,7 +128,6 @@ ul li a:hover::before {
     height: 100%;
     width: 100%;
     background-color: black;
-    /* background-image: url(https://wallpapercave.com/dwp1x/wp7019509.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -322,7 +321,7 @@ ul li a:hover::before {
     height: 100%;
     width: 35%;
     background-color: violet;
-    background-image: url(https://wallpapercave.com/dwp1x/wp9326407.jpg);
+    background-image: url(./Images/chicked.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -676,7 +675,6 @@ ul li a:hover::before {
 }
 #sec1:hover
 {
-    /* background-image: url(https://wallpapercave.com/dwp1x/wp11979582.jpg); */
     background-position: center;
     background-size: cover;
     background-color: #171717;
@@ -1177,7 +1175,6 @@ input::placeholder
     {
         height: 40%;
         width: 100%;
-        background-image: url(https://wallpapercave.com/dwp1x/wp9326407.jpg);
     }
     #about3
     {
@@ -1319,7 +1316,7 @@ input::placeholder
         width: 95%;
         /* background-color: hotpink; */
         margin-top: 5%;
-        background-image: url(https://wallpapercave.com/dwp1x/wp10686280.jpg);
+        background-image: url(./Images/dishBackground.jpeg);
         background-position: center;
         background-size: cover;
     }
@@ -1329,7 +1326,7 @@ input::placeholder
         width: 95%;
         /* background-color: #222222; */
         margin-top: 5%;
-        background-image: url(https://wallpapercave.com/dwp1x/wp10686280.jpg);
+        background-image: url(./Images/dishBackground.jpeg);
         background-position: center;
         background-size: cover;
     }
