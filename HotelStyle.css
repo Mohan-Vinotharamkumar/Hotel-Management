@@ -1190,7 +1190,7 @@ input::placeholder
 
     #Addvertisement
     {
-        height: 40vh;
+        height: 35vh;
         width: 100%;
         position: relative;
     }
@@ -1594,7 +1594,7 @@ input::placeholder
 
     #footerSection
     {
-        height: 50vh;
+        height: 30vh;
     }
     #footerBackground
     {
@@ -1613,6 +1613,7 @@ input::placeholder
     }
     #footSec1
     {
+        width: 20%;
         display: flex;
     }
     #footSec2
@@ -1621,13 +1622,13 @@ input::placeholder
     }
     #footSec1 img
     {
-        height: 50%;
-        width: 70%;
+        height: 70%;
+        width: 90%;
     }
     .foodAdress
     {
-        padding-left: 0%;
-        margin-top: 15%;
+        padding-left: 2%;
+        /* margin-top: 15%; */
     }
     .footMail
     {
@@ -1635,12 +1636,13 @@ input::placeholder
     }
     .footContact
     {
-        padding-left: 0%;
+        padding-left: 2%;
         padding-top: 10%;
+        display: none;
     }
     #footIconSection
     {
-        padding-left: 0%;
+        padding-left: 2%;
     }
     #footIconSection i
     {
@@ -1651,12 +1653,12 @@ input::placeholder
     }
     #footSec3 h1
     {
-        padding-top: 20%;
+        /* padding-top: 20%; */
         font-size: 1rem;
     }
     #footerLi
     {
-        padding-top: 4%;
+        padding-top: 2%;
         font-size: 0.7rem;
     }
 }
